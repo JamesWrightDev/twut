@@ -15,7 +15,7 @@ class CreateTwutsTable extends Migration
     {
         Schema::create('twuts', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('string');
+            $table->string('body');
             $table->integer('user_id');
             $table->timestamps();
         });

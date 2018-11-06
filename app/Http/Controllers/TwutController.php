@@ -35,12 +35,13 @@ class TwutController extends Controller
      */
     public function store(Request $request)
     {
-        dd($request->all());
-        $this.validate(request(),
-            [
-                'body' => 'required'
-            ]
-        );
+       
+
+        // $this.validate(request(),
+        //     [
+        //         'body' => 'required'
+        //     ]
+        // );
         Twut::create([
             'body' => request('body'),
             'user_id' => auth()->id()
